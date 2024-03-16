@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+ int i;
+ int n;
+ int num;
+ int final=0;
+ scanf("%d",&num);
+ for(i=1;i<=num/2;i++){
+ n=num%i;
+ if(n==0){
+ 
+    final = i+ final;
+ }
+}
+if (final==num){
+    printf("perfect number");
+}
+else{
+    printf("not a perfect number");
+}
+    return 0;
+}
