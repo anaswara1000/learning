@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int compoundintrest(int capital,float rate,float year){
+int simpleintrest(int capital,float rate,float year){
     float intrest;
     int principal;
     
@@ -21,7 +21,7 @@ int main(){
     int principal;
     float intrest;
     scanf("%d\n%f\n%f",&capital,&rate,&year);
-    intrest=compoundintrest(capital,rate,year);
+    intrest=simpleintrest(capital,rate,year);
 
 
     return 0;
