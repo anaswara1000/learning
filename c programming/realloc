@@ -1,0 +1,25 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+    //int a[30];
+    int n,i,*ptr;
+    printf("enter tot no. of values:\n");
+    scanf("%d",&n);
+    
+    ptr=(int*)malloc(n*sizeof(int));
+    printf("enter the values:");
+    for(i=0;i<n;i++){
+        scanf("%d",(ptr+i));
+    }
+    printf("enter updated size:");
+    scanf("%d",&n);
+    int *ptr1=(int*)realloc(ptr,n*sizeof(int));
+    printf("prev add:%d,new add:%d",ptr,ptr1);
+    printf("entered values are:");
+    for(i=0;i<n;i++){
+        printf("%d\t",*(ptr1+i));
+    }
+    free(ptr1);
+}
