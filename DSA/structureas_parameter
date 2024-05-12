@@ -1,0 +1,49 @@
+//call by value
+
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+
+struct rec{
+    int l;
+    int b;
+};
+void fun(struct rec r){
+    r.l=20;
+    cout<<"length "<<r.l<<endl;
+     cout<<"breadth "<<r.b<<endl;
+}
+
+int main(){
+   // int l,b;
+    struct rec r={10,5};
+    fun(r);
+    cout<<"length "<<r.l<<endl;
+     cout<<"breadth "<<r.b<<endl;
+    
+}
+
+//call by ref
+
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+
+struct rec{
+    int l;
+    int b;
+};
+void fun(struct rec *p){
+    p->l=20;
+    cout<<"length "<<p->l<<endl;
+     cout<<"breadth "<<p->b<<endl;
+}
+
+int main(){
+   // int l,b;
+    struct rec r={10,5};
+    fun(&r);
+    cout<<"length "<<r.l<<endl;
+     cout<<"breadth "<<r.b<<endl;
+    
+}
