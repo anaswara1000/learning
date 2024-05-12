@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+int area(int len,int bre){
+    return len*bre;
+}
+
+int peri(int len,int bre){
+    int p;
+    p=2*(len+bre);
+    return p;
+}
+
+int main(){
+    int len=0,bre=0;
+    cout<<"enter len and bre:"<<endl;
+    cin>>len>>bre;
+    
+    int a=area(len,bre);
+    int pe=peri(len,bre);
+    
+    cout<<"area:"<<a<<endl<<"peri:"<<pe<<endl;
+    return 0;
+}
