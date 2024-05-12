@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+struct rec{
+    int l;
+    int b;
+    
+};
+int main(){
+    rec *p;
+    //p=(struct rec*)malloc(sizeof(struct rec));//this is in c
+    p=new rec;//this is c++ instead of using above line
+    p->l=15;
+    p->b=7;
+    
+    cout<<p->l<<endl;
+    cout<<p->b<<endl;
+    
+   return 0; 
+}
