@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+struct array {
+    int A[20];
+    int size;
+    int len;
+};
+
+void display(struct array arr){
+   int i;
+   for(i=0;i<arr.len;i++)
+       printf("%d ",arr.A[i]);
+   
+}
+
+
+
+ int binsearch(struct array arr,int key)   {
+     int l,mid,h;
+     l=0;
+     h=arr.len-1;
+while(l<=h){
+     mid=(l+h)/2;
+  if(key==arr.A[mid])
+     return mid;
+ else if(key<arr.A[mid])
+     h=mid-1;
+ else
+     l=mid+1;
+     
+ }
+ return -1;
+ }
+    int main(){
+        struct array arr={{2,3,4,5,6},10,5};
+       printf("%d\n",binsearch(arr,6));
+        display(arr);
+       
+        return 0;
+    }
