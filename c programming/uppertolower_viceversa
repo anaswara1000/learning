@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char A[]="WelComE";
+    int i;
+    for(i=0;A[i]!='\0';i++){
+        if(A[i]>='A' && A[i]<='Z')
+        A[i]+=32;
+        else if(A[i]>='a'&&A[i]<='z')
+            A[i]-=32;
+        else{
+            printf("invalid");
+        }
+        printf("%c\n",A[i]);
+    }
+    return 0;
+}
