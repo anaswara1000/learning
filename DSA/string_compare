@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+    char A[30];
+    char B[30];
+    int i,j;
+    scanf("%s",A);
+    scanf("%s",B);
+    for(i=0,j=0;A[i]!='\0',B[j]!='\0';i++,j++){
+        if (A[i]!=B[j])
+        break;
+        
+    }
+    //printf("%d\n",i);
+    if (A[i]==B[j]){
+        printf("equal");
+    }
+    else if(A[i]<B[j]){
+        printf("smaller");
+    }
+    else{
+        printf("greater");
+    }
+}
