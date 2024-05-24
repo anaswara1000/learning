@@ -81,6 +81,9 @@ print("Bye")
 ##################################
 # list comparison is equal to for loop
 
+#list comprehension
+# this is the syntax
+ new_todos=[item.strip('\n') for item in todos]
 
 
 
