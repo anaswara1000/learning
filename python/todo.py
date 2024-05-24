@@ -61,3 +61,51 @@ while True:
 print("Bye")
 
 #########################################################################
+
+#enumerate is a list of tuples
+# 61
+    case 'add':
+            todo = input("enter a todo: ") + "\n"
+
+            file=open('todos.txt','r')
+            todos=file.readlines()
+            file.close()
+
+            todos.append(todo)
+
+            file=open('todos.txt','w')
+            file.writelines(todos)
+            file.close()
+
+# ###############################################
+##################################
+# list comparison is equal to for loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
