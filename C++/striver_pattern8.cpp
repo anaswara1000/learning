@@ -8,7 +8,7 @@ for(int i=0;i<n;i++){
     start=1;
     else
     start=0;
-    for(int j=0;j<i;j++){
+    for(int j=0;j<=i;j++){
         cout<<start;
         start=1-start;
     }
@@ -26,11 +26,11 @@ int main(){
 
 }
 
-1
-6
 
-0
-10
-010
-1010
-01010
+1
+5
+1
+01
+101
+0101
+10101
