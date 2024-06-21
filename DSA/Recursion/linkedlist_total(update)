@@ -205,6 +205,30 @@ void reverse1(struct node *p){
     }
 }
 
+// slidiing pointer
+void reverse2(struct node *p) {
+    struct node *q=NULL,*r=NULL;
+    while(p!=NULL){
+        r=q;
+        q=p;
+        p=p->next;
+        q->next=r;
+    }
+    first=q;
+}   
+  
+// recursion reverse
+
+void reverse3(struct node *q,struct node *p){
+    if(p){
+        reverse3(p,p->next);
+        p->next=q;
+    }
+    else{
+        first=q;
+    }
+}
+
 int main()
 {
     int A[]={10,20,20,20,30,40,40,40,50};
