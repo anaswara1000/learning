@@ -11,6 +11,7 @@ int peri(int len,int bre){
     return p;
 }
 
+
 int main(){
     int len=0,bre=0;
     cout<<"enter len and bre:"<<endl;
@@ -22,3 +23,4 @@ int main(){
     cout<<"area:"<<a<<endl<<"peri:"<<pe<<endl;
     return 0;
 }
+
