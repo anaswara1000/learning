@@ -12,3 +12,5 @@ int main(){
     cout<<"area:"<<area<<endl<<"peri:"<<peri<<endl;
     return 0;
 }
+
+
