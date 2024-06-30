@@ -15,3 +15,7 @@ if result<1:
     print("kid is too small.")
 else:
     print("kid can use the slide")
+
+
+
+
