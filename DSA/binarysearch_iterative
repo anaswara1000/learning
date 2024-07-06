@@ -37,4 +37,6 @@ while(l<=h){
         display(arr);
        
         return 0;
+
     }
+
