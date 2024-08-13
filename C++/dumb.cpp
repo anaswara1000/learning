@@ -187,22 +187,3 @@ int main(){
     return 0;
 }
 
-
-#include<iostream>
-using namespace std;
-
-int main(){
-   int n=0;
-   cin>>n;
-   if(n==15){
-       cout<<"equal"<<endl;
-   }
-   else if(n<15){
-       cout<<"lesser"<<endl;
-   }
-    else{
-        cout<<"greater"<<endl;
-    }
-  
-    return 0;
-} 
